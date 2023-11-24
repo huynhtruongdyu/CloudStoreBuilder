@@ -1,0 +1,26 @@
+<Project>
+	<PropertyGroup>
+		<Title>Cloud Store Builder</Title>
+		<Authors>Duy Huynh (Aaron)</Authors>
+		<Description></Description>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags></PackageTags>
+		<RepositoryUrl></RepositoryUrl>
+		<PackageProjectUrl></PackageProjectUrl>
+		<RootNamespace></RootNamespace>
+	</PropertyGroup>
+	<PropertyGroup>
+		<AnalysisLevel>latest</AnalysisLevel>
+		<AnalysisMode>all</AnalysisMode>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!--<PackageReference Include="SonarAnalyzer.CSharp" Version="9.12.0.78982" PrivateAssets="all" Condition="$(MSBuildProjectExtension)=='.csproj'" />-->
+		<PackageReference Include="SonarAnalyzer.CSharp" Version="9.12.0.78982"  PrivateAssets="all" Condition="$(MSBuildProjectExtension)=='.csproj'">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+</Project>
