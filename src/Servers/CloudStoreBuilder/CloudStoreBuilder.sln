@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34310.174
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{73CDC832-8A7B-4D6C-8FB4-EA6CBF7650AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B6B4E6B7-984B-4CB1-8FAC-FCC506136887}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{C63CDEF8-6358-4CA4-9C0B-DEC44691001C}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{4D4D1A9C-DBC9-4112-BA5A-899B42ADE033}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{56DF5347-153F-4013-887E-1DA11BCADCDE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Baskets", "Baskets", "{0C592BDF-76A7-498F-9A68-C3F9CE151084}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalogs", "Catalogs", "{C94FD81A-7997-459F-97D7-D6D0966AFAD7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{944099D6-E138-48D6-9EB7-D2E4D9525AF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSB.Services.Baskets.API", "src\Services\Baskets\CSB.Services.Baskets.API\CSB.Services.Baskets.API.csproj", "{19337C15-2CBC-4820-8C02-3C257B0CA94C}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{2ED34D7B-6215-43B8-8189-6EDC9759EB33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSB.Services.Catalogs.API", "src\Services\Catalogs\CSB.Services.Catalogs.API\CSB.Services.Catalogs.API.csproj", "{5AD839D3-5357-4F70-ACAF-3A81A56DD1E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSB.Gateways.YARP.ReverseProxy", "src\Gateways\CSB.Gateways.YARP.ReverseProxy\CSB.Gateways.YARP.ReverseProxy.csproj", "{F01BC5F3-70A1-4994-8861-560BCBF74145}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19337C15-2CBC-4820-8C02-3C257B0CA94C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19337C15-2CBC-4820-8C02-3C257B0CA94C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19337C15-2CBC-4820-8C02-3C257B0CA94C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19337C15-2CBC-4820-8C02-3C257B0CA94C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ED34D7B-6215-43B8-8189-6EDC9759EB33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ED34D7B-6215-43B8-8189-6EDC9759EB33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ED34D7B-6215-43B8-8189-6EDC9759EB33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ED34D7B-6215-43B8-8189-6EDC9759EB33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AD839D3-5357-4F70-ACAF-3A81A56DD1E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AD839D3-5357-4F70-ACAF-3A81A56DD1E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AD839D3-5357-4F70-ACAF-3A81A56DD1E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AD839D3-5357-4F70-ACAF-3A81A56DD1E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F01BC5F3-70A1-4994-8861-560BCBF74145}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F01BC5F3-70A1-4994-8861-560BCBF74145}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F01BC5F3-70A1-4994-8861-560BCBF74145}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F01BC5F3-70A1-4994-8861-560BCBF74145}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4D4D1A9C-DBC9-4112-BA5A-899B42ADE033} = {73CDC832-8A7B-4D6C-8FB4-EA6CBF7650AE}
+		{56DF5347-153F-4013-887E-1DA11BCADCDE} = {73CDC832-8A7B-4D6C-8FB4-EA6CBF7650AE}
+		{0C592BDF-76A7-498F-9A68-C3F9CE151084} = {4D4D1A9C-DBC9-4112-BA5A-899B42ADE033}
+		{C94FD81A-7997-459F-97D7-D6D0966AFAD7} = {4D4D1A9C-DBC9-4112-BA5A-899B42ADE033}
+		{944099D6-E138-48D6-9EB7-D2E4D9525AF3} = {4D4D1A9C-DBC9-4112-BA5A-899B42ADE033}
+		{19337C15-2CBC-4820-8C02-3C257B0CA94C} = {0C592BDF-76A7-498F-9A68-C3F9CE151084}
+		{5AD839D3-5357-4F70-ACAF-3A81A56DD1E6} = {C94FD81A-7997-459F-97D7-D6D0966AFAD7}
+		{F01BC5F3-70A1-4994-8861-560BCBF74145} = {56DF5347-153F-4013-887E-1DA11BCADCDE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D4137DE-BF91-42DF-BB39-2FCBE9A2E70C}
+	EndGlobalSection
+EndGlobal

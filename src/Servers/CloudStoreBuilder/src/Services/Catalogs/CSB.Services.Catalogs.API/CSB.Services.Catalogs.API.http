@@ -1,0 +1,6 @@
+@CSB.Services.Catalogs.API_HostAddress = http://localhost:5192
+
+GET {{CSB.Services.Catalogs.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

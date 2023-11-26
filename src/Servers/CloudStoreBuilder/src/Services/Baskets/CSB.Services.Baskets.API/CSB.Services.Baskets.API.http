@@ -1,0 +1,6 @@
+@CSB.Services.Baskets.API_HostAddress = http://localhost:5223
+
+GET {{CSB.Services.Baskets.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

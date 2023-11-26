@@ -1,0 +1,41 @@
+version: '3.4'
+
+services:
+  csb.services.baskets.api:
+    container_name: csb-service-basket-api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=7001
+    ports:
+      - "7001:7001"
+    networks:
+      - internal-net
+
+  csb.services.catalogs.api:
+    container_name: csb-service-catalogs-api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=7002
+    ports:
+      - "7002:7002"
+    networks:
+      - internal-net
+
+  csb.gateways.yarp.reverseproxy:
+    container_name: csb-gateways-yarp-reverseproxy
+    depends_on:
+      - csb.services.baskets.api
+      - csb.services.catalogs.api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=7300
+    ports:
+      - "7300:7300"
+    networks:
+      - internal-net
+
+networks:
+  internal-net:
+    driver: bridge
+
+

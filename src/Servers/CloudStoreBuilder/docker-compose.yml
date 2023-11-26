@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  csb.services.baskets.api:
+    image: ${DOCKER_REGISTRY-}csbservicesbasketsapi
+    build:
+      context: .
+      dockerfile: src/Services/Baskets/CSB.Services.Baskets.API/Dockerfile
+
+  csb.services.catalogs.api:
+    image: ${DOCKER_REGISTRY-}csbservicescatalogsapi
+    build:
+      context: .
+      dockerfile: src/Services/Catalogs/CSB.Services.Catalogs.API/Dockerfile
+
+
+  csb.gateways.yarp.reverseproxy:
+    image: ${DOCKER_REGISTRY-}csbgatewaysyarpreverseproxy
+    build:
+      context: .
+      dockerfile: src/Gateways/CSB.Gateways.YARP.ReverseProxy/Dockerfile
+

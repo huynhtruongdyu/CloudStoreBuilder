@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "csb.services.baskets.api": "StartDebugging",
+        "csb.services.catalogs.api": "StartDebugging",
+        "csb.gateways.yarp.reverseproxy": "StartDebugging"
+      }
+    }
+  }
+}
