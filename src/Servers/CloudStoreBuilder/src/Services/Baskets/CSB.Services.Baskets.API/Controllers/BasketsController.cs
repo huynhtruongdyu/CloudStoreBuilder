@@ -4,7 +4,7 @@ namespace CSB.Services.Baskets.API.Controllers;
 [Route("api/[controller]")]
 [ApiController]
 public class BasketsController : ControllerBase {
-    private ILogger<BasketsController> _logger;
+    private readonly ILogger<BasketsController> _logger;
 
     public BasketsController(ILogger<BasketsController> logger) {
         _logger = logger;
