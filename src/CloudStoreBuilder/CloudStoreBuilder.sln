@@ -9,6 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B6B4E6B7
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{C63CDEF8-6358-4CA4-9C0B-DEC44691001C}"
 	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
 		Directory.Build.props = Directory.Build.props
 	EndProjectSection
 EndProject
@@ -22,13 +23,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalogs", "Catalogs", "{C9
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{944099D6-E138-48D6-9EB7-D2E4D9525AF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSB.Services.Baskets.API", "src\Services\Baskets\CSB.Services.Baskets.API\CSB.Services.Baskets.API.csproj", "{19337C15-2CBC-4820-8C02-3C257B0CA94C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSB.Services.Baskets.API", "src\Services\Baskets\CSB.Services.Baskets.API\CSB.Services.Baskets.API.csproj", "{19337C15-2CBC-4820-8C02-3C257B0CA94C}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{2ED34D7B-6215-43B8-8189-6EDC9759EB33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSB.Services.Catalogs.API", "src\Services\Catalogs\CSB.Services.Catalogs.API\CSB.Services.Catalogs.API.csproj", "{5AD839D3-5357-4F70-ACAF-3A81A56DD1E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSB.Services.Catalogs.API", "src\Services\Catalogs\CSB.Services.Catalogs.API\CSB.Services.Catalogs.API.csproj", "{5AD839D3-5357-4F70-ACAF-3A81A56DD1E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSB.Gateways.YARP.ReverseProxy", "src\Gateways\CSB.Gateways.YARP.ReverseProxy\CSB.Gateways.YARP.ReverseProxy.csproj", "{F01BC5F3-70A1-4994-8861-560BCBF74145}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSB.Gateways.YARP.ReverseProxy", "src\Gateways\CSB.Gateways.YARP.ReverseProxy\CSB.Gateways.YARP.ReverseProxy.csproj", "{F01BC5F3-70A1-4994-8861-560BCBF74145}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClientApps", "ClientApps", "{6199CD57-41A3-4680-A681-C610112C5CC9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +68,7 @@ Global
 		{19337C15-2CBC-4820-8C02-3C257B0CA94C} = {0C592BDF-76A7-498F-9A68-C3F9CE151084}
 		{5AD839D3-5357-4F70-ACAF-3A81A56DD1E6} = {C94FD81A-7997-459F-97D7-D6D0966AFAD7}
 		{F01BC5F3-70A1-4994-8861-560BCBF74145} = {56DF5347-153F-4013-887E-1DA11BCADCDE}
+		{6199CD57-41A3-4680-A681-C610112C5CC9} = {73CDC832-8A7B-4D6C-8FB4-EA6CBF7650AE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7D4137DE-BF91-42DF-BB39-2FCBE9A2E70C}

@@ -13,10 +13,20 @@ services:
       context: .
       dockerfile: src/Services/Catalogs/CSB.Services.Catalogs.API/Dockerfile
 
-
   csb.gateways.yarp.reverseproxy:
     image: ${DOCKER_REGISTRY-}csbgatewaysyarpreverseproxy
     build:
       context: .
       dockerfile: src/Gateways/CSB.Gateways.YARP.ReverseProxy/Dockerfile
+
+  csb.infra.seq:
+    image: datalust/seq:latest
+    container_name: csb-infra-seq
+    environment:
+      - "ACCEPT_EULA=Y"
+    ports:
+      - 5341:5341
+      - 8081:80
+    networks:
+      - internal-net
 
