@@ -13,6 +13,11 @@ public class BasketsController : ControllerBase {
     [HttpGet]
     public IActionResult GetBaskets() {
         _logger.LogInformation("hello world");
+        _logger.LogCritical("Cristical");
+        _logger.LogDebug("Debug");
+        _logger.LogError("Error");
+        _logger.LogTrace("Trace");
+        _logger.LogWarning("Warning");
         return Ok(nameof(GetBaskets));
     }
 }

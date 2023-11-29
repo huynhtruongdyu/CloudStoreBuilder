@@ -1,6 +1,7 @@
 version: '3.4'
 
 services:
+# Services
   csb.services.baskets.api:
     image: ${DOCKER_REGISTRY-}csbservicesbasketsapi
     build:
@@ -13,12 +14,14 @@ services:
       context: .
       dockerfile: src/Services/Catalogs/CSB.Services.Catalogs.API/Dockerfile
 
+# Gateways
   csb.gateways.yarp.reverseproxy:
     image: ${DOCKER_REGISTRY-}csbgatewaysyarpreverseproxy
     build:
       context: .
       dockerfile: src/Gateways/CSB.Gateways.YARP.ReverseProxy/Dockerfile
 
+# Infrastructure
   csb.infra.seq:
     image: datalust/seq:latest
     container_name: csb-infra-seq
@@ -29,4 +32,5 @@ services:
       - 8081:80
     networks:
       - internal-net
+      
 
