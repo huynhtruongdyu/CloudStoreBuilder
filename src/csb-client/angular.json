@@ -6,33 +6,11 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "client-csb-portal": {
+    "csb-client": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "sass",
-          "skipTests": true
-        },
-        "@schematics/angular:class": {
-          "skipTests": true
-        },
-        "@schematics/angular:directive": {
-          "skipTests": true
-        },
-        "@schematics/angular:guard": {
-          "skipTests": true
-        },
-        "@schematics/angular:interceptor": {
-          "skipTests": true
-        },
-        "@schematics/angular:pipe": {
-          "skipTests": true
-        },
-        "@schematics/angular:resolver": {
-          "skipTests": true
-        },
-        "@schematics/angular:service": {
-          "skipTests": true
+          "style": "scss"
         }
       },
       "root": "",
@@ -42,20 +20,20 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/client-csb-portal",
+            "outputPath": "dist/csb-client",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
-            "inlineStyleLanguage": "sass",
+            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -87,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "client-csb-portal:build:production"
+              "buildTarget": "csb-client:build:production"
             },
             "development": {
-              "buildTarget": "client-csb-portal:build:development"
+              "buildTarget": "csb-client:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -98,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "client-csb-portal:build"
+            "buildTarget": "csb-client:build"
           }
         },
         "test": {
@@ -109,13 +87,13 @@
               "zone.js/testing"
             ],
             "tsConfig": "tsconfig.spec.json",
-            "inlineStyleLanguage": "sass",
+            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.scss"
             ],
             "scripts": []
           }
