@@ -1,0 +1,14 @@
+@import "./variables";
+
+//Buttons
+$button-b: $border-8px;
+$button-p: $padding-4px;
+$button-main-bg-c: $black;
+$button-main-txt-c: $white;
+
+body[color-schema="dark"] {
+  //Buttons
+  $button-b: $border-4px;
+  $button-main-bg-c: $black;
+  $button-main-txt-c: $white;
+}

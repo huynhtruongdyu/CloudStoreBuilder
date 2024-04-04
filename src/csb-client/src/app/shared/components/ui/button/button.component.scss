@@ -1,0 +1,26 @@
+@import "../../../../../assets/scss/themes";
+
+button.csb-button {
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  min-width: fit-content;
+  max-width: 100vw;
+  background-color: white;
+  border-radius: $button-b;
+  outline: none;
+  transition-duration: 0.2s;
+  box-shadow: none;
+  &:disabled {
+    opacity: 0.4;
+    cursor: default !important;
+    background-color: unset !important;
+  }
+  &.main {
+    background-color: $button-main-bg-c;
+    color: $button-main-txt-c;
+    &:hover {
+      background-color: $black-hover;
+      cursor: pointer;
+    }
+  }
+}
